@@ -1,0 +1,153 @@
+/* General Styling */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Player Setup Section */
+.player-setup {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  flex-direction: column;
+  width: 300px;
+}
+
+.player-setup input {
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 0.5rem;
+  border: 2px solid #333;
+  border-radius: 5px;
+  outline: none;
+}
+
+.player-setup button {
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 4px 4px 0 #333;
+  border: 3px solid #333;
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.player-setup button:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+}
+
+/* Game Status Message */
+.game-status {
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1rem;
+  
+}
+
+/* Gameboard Styling */
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  gap: 10px;
+  margin-bottom: 1rem;
+}
+
+.board .cell {
+  background-color: #fff176;
+  font-size: 2rem;
+  border: 3px solid #333;
+  font-weight: bold;
+  text-align: center;
+  line-height: 95px;
+  cursor: pointer;
+  box-shadow: 4px 4px 0 #333;
+  transition: transform 0.2s ease;
+}
+
+.board .cell:hover {
+  transform: translateY(-3px);
+}
+
+.board .cell:active {
+  transform: translateY(1px);
+}
+
+/* Game Message Section */
+.game-message {
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.win-state {
+  color: #45a049;
+  font-weight: bold;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  
+}
+
+
+/* Players Status Section */
+.players-status {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-bottom: 1rem;
+}
+
+.players-status .player1-status {
+  color: rgb(40, 108, 255);
+  font-weight: bold;
+  font-size: 1.2rem;
+  box-shadow: 4px 4px 0 #333;
+  border: 2px solid #333;
+  padding: 10px;
+
+}
+
+.players-status .player2-status {
+  color: rgb(255, 83, 83);
+  font-weight: bold;
+  font-size: 1.2rem;
+  box-shadow: 4px 4px 0 #333;
+  border: 2px solid #333;
+  padding: 10px;
+
+}
+
+/* Reset Button */
+.reset-button {
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #b86bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 4px 4px 0 #333;
+  border: 3px solid #333;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.reset-button:hover {
+  background-color: #e55a5a;
+  transform: scale(1.05);
+}
